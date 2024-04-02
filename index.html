@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="wrapper">
+    <nav class="nav">
+        <div class="nav_logo">
+            <p>LOGO.</p>
+        </div>
+        <div class="nav_menu" id="navMenu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav_button">
+            <button class="btn white_btn" id="loginBtn" onclick="login()">Sign In</button>
+            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+        </div>
+        <div class="nav_menu_btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <!-- Form Box ------------------------------------------------------>
+
+    <div class="form_box">
+
+        <!-- LogIn Form ----------------------------------------->
+
+
+        <div class="login_container" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>LogIn</header>
+            </div>
+            
+            <div class="input_box">
+                <input type="text" class="input_field" placeholder="UserName Or Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input_box">
+                <input type="password" class="input_field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input_box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+
+            <div class="two_col">
+                <div class="one">
+                    <input type="checkbox" id="login_check">
+                    <label for="login_check">Remember Me</label>
+                </div>
+                <div class="two">
+                    <label for=""><a href="#">| Forget Password</a></label>
+                </div>    
+            </div>
+        </div>
+
+
+        <!-- Registration Form ----------------------------------------->
+        <div class="register_container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">LogIn</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two_forms">
+                <div class="input_box">
+                    <input type="text" class="input_field" placeholder="FirstName">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input_box">
+                    <input type="text" class="input_field" placeholder="LastName">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input_box">
+                <input type="text" class="input_field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input_box">
+                <input type="password" class="input_field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input_box">
+                <input type="submit" class="submit" value="Register">
+            </div>
+
+            <div class="two_col">
+                <div class="one">
+                    <input type="checkbox" id="register_check">
+                    <label for="register_check">Remember Me</label>
+                </div>
+                <div class="two">
+                    <label for=""><a href="#">Terms & conditions</a></label>
+                </div>    
+            </div>
+        </div>
+    
+    
+    </div>
+    </div>
+
+</body>
+</html>
